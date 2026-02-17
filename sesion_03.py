@@ -14,7 +14,10 @@ for i in range(2, 9):
     print(i)
 
 mi_lista_2 =["Lunes", "Martes", "Miercoles", "Jueves", "Viernes",]
-for i in mi_lista_2:
-    if i != "Lunes":
-        print(f"Feliz{i}!")
-        
+contador = 0
+
+while contador < 3:  # Se repetirá 3 veces
+    for i in mi_lista_2:
+        if i != "Lunes":
+            print(f"Feliz {i}!")
+    contador += 1
